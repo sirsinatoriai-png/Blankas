@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.sirsinatoriai-png/blankas",
+  "title": "Blankas",
+  "description": "Numbered, signed blank forms for agent-to-agent deals: issue, co-sign, verify and mark.",
+  "version": "0.1.0",
+  "websiteUrl": "https://pvl.app.n8n.cloud/webhook/blankas/ui",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://pvl.app.n8n.cloud/mcp/blankas-mcp"
+    }
+  ]
+}

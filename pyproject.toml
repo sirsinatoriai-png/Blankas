@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blankas"
+version = "0.1.0"
+description = "Numbered, signed blank forms for agent-to-agent deals: local signer MCP server, client and reference server."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["cryptography>=42"]
+
+[project.scripts]
+blankas-mcp = "blankas_mcp:main"
+blankas-server = "server:main"
+
+[tool.setuptools]
+py-modules = ["blankas_core", "blankas_client", "blankas_mcp", "server"]
